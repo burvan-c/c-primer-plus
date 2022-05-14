@@ -60,13 +60,32 @@ int main()
 	printf("float epsilon = %e\n", FLT_EPSILON);*/
 
 
-#define pi 3.141593
-	int number = 7;
-	float pies = 12.75;
-	int cost = 7800;
-	printf("the %d contestants ate %f berry pies.\n", number, pies);
-	printf("the value of pi is %f.\n", pi);
-	printf("farewell! thou art too dear for my possessing,\n");
-	printf("%c%d\n", '$', 2 * cost);
+//#define pi 3.141593
+//	int number = 7;
+//	float pies = 12.75;
+//	int cost = 7800;
+//	printf("the %d contestants ate %f berry pies.\n", number, pies);
+//	printf("the value of pi is %f.\n", pi);
+//	printf("farewell! thou art too dear for my possessing,\n");
+//	printf("%c%d\n", '$', 2 * cost);
+
+
+//#define pages 959
+//		printf("*%d*\n", pages);
+//		printf("*%2d*\n", pages);//2字段宽度，自动扩大
+//		printf("*%10d*\n", pages);//10字段宽度，右对齐
+//		printf("*%-10d*\n", pages);//10字段宽度，左对齐
+
+
+	const double rent = 3852.99;
+	printf("*%f*\n", rent);//字段宽度和小数位数为系统默认
+	printf("*%e*\n", rent);//%e--小数点左侧一位数字，小数点右侧6位数字
+	printf("*%4.2f*\n", rent);//2个小数
+	printf("*%3.1f*\n", rent);//四舍五入
+	printf("*%10.3f*\n", rent);//10个整数2个小数
+	printf("*%10.3E*\n", rent);//四舍五入和E
+	printf("*%+4.2f*\n", rent);
+	printf("*%010.2f*\n", rent);//前面补0
+
 	return 0;
 }
